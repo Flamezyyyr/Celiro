@@ -1,5 +1,5 @@
 class Replicator:
-    def __init__(self, name="Celiro_Replica"):
+    def __init__(self, name="Zoracha_Replica"):
         self.name = name
 
     def replicate(self):
@@ -16,5 +16,5 @@ class Replicator:
         self.name += f"_variant_{random.randint(1, 100)}"
 
 # Example usage
-celiro_replicator = Replicator()
-replica = celiro_replicator.replicate()
+Zoracha_replicator = Replicator()
+replica = Zoracha_replicator.replicate()
