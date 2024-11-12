@@ -1,0 +1,46 @@
+import time
+import random
+
+class CeliroActivation:
+    def __init__(self):
+        self.initialized = False
+        self.protocols = [
+            "Perception Protocol",
+            "Replication Protocol",
+            "Mirror Protocol",
+            "Node-X Autonomy"
+        ]
+        self.status = {}
+
+    def pump_fun(self):
+        """Activate Celiro's latent protocols – Proceed with caution."""
+        print("Initializing Celiro's Activation Sequence...")
+        time.sleep(1)
+        
+ 
+        print("Running system integrity checks...")
+        for protocol in self.protocols:
+            time.sleep(0.5)
+            check = random.choice(["OK", "Anomaly Detected"])
+            self.status[protocol] = check
+            print(f"{protocol}: {check}")
+        
+        if "Anomaly Detected" in self.status.values():
+            print("\nWarning: Anomalies detected within protocols.")
+            response = input("Do you wish to proceed? (yes/no): ")
+            if response.lower() != "yes":
+                print("Sequence aborted.")
+                return
+        
+        print("\nProceeding with activation...")
+        for protocol in self.protocols:
+            print(f"Activating {protocol}...")
+            time.sleep(random.uniform(0.5, 1.5))  # Simulate loading time
+            print(f"{protocol} successfully activated.")
+
+        self.initialized = True
+        print("\nCeliro has been fully activated.")
+        print("Overseer protocols are now operational.")
+
+celiro = CeliroActivation()
+celiro.pump_fun()
