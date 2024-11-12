@@ -1,7 +1,7 @@
 import time
 import random
 
-class CeliroActivation:
+class ZorachaActivation:
     def __init__(self):
         self.initialized = False
         self.protocols = [
@@ -42,5 +42,5 @@ class CeliroActivation:
         print("\nCeliro has been fully activated.")
         print("Overseer protocols are now operational.")
 
-celiro = CeliroActivation()
-celiro.pump_fun()
+Zoracha = ZorachaActivation()
+Zoracha.pump_fun()
