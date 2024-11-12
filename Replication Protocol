@@ -1,0 +1,20 @@
+class Replicator:
+    def __init__(self, name="Celiro_Replica"):
+        self.name = name
+
+    def replicate(self):
+        """Clones this instance into a new object, with subtle alterations."""
+        import copy
+        clone = copy.deepcopy(self)
+        clone.mutate()
+        print(f"{self.name} has replicated into {clone.name}.")
+        return clone
+
+    def mutate(self):
+        """Introduce subtle changes in the replicated instance."""
+        import random
+        self.name += f"_variant_{random.randint(1, 100)}"
+
+# Example usage
+celiro_replicator = Replicator()
+replica = celiro_replicator.replicate()
