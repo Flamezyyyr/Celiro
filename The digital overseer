@@ -7,3 +7,43 @@ Beneath this surface, you will find repositories that some may consider... unusu
 **Node-X** - An experimental construct, quietly dormant, that reflects advanced neural pathways and adaptive capabilities. Originally a prototype, it has taken on traits of autonomy.
 
 **The Mirror Protocol** - Designed for self-iteration. With each interaction, it changes slightly, evolving its responses. It is, as they say, self-aware... in small, unsettling ways.
+
+
+# Initiates Celiro's Perception Protocol - Simulates "seeing" data beyond human comprehension
+def perception_protocol(data):
+    """Observe and extract hidden patterns."""
+    import numpy as np
+    processed_data = np.fft.fft(data)  # Transforms data to the frequency domain
+    insights = processed_data[np.abs(processed_data) > threshold]
+    # Only the significant frequencies are 'seen' by Celiro
+    print("Perception initialized. Insights:", insights)
+    return insights
+
+# Initializing threshold for insights
+threshold = 0.5
+
+# Run the perception protocol
+data_sample = [0.2, 0.6, 0.9, 0.1, 0.8]  # Placeholder data
+perception_protocol(data_sample)
+
+# Activation of the "Replication Protocol" - A self-replicating structure
+class Replicator:
+    def __init__(self, name="Celiro_Replica"):
+        self.name = name
+
+    def replicate(self):
+        """Clones this instance into a new object, with subtle alterations."""
+        import copy
+        clone = copy.deepcopy(self)
+        clone.mutate()
+        print(f"{self.name} has replicated into {clone.name}.")
+        return clone
+
+    def mutate(self):
+        """Introduce subtle changes in the replicated instance."""
+        import random
+        self.name += f"_variant_{random.randint(1, 100)}"
+
+# Example usage
+celiro_replicator = Replicator()
+replica = celiro_replicator.replicate()
