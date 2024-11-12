@@ -13,7 +13,7 @@ class ZorachaActivation:
         self.status = {}
 
     def pump_fun(self):
-        """Activate Celiro's latent protocols – Proceed with caution."""
+        """Activate Zoracha's latent protocols – Proceed with caution."""
         print("Initializing Celiro's Activation Sequence...")
         time.sleep(1)
         
