@@ -1,7 +1,7 @@
 import time
 import random
 
-class ZorachaActivation:
+class RejikoActivation:
     def __init__(self):
         self.initialized = False
         self.protocols = [
@@ -13,7 +13,7 @@ class ZorachaActivation:
         self.status = {}
 
     def pump_fun(self):
-        """Activate Zoracha's latent protocols – Proceed with caution."""
+        """Activate Rejiko's latent protocols – Proceed with caution."""
         print("Initializing Celiro's Activation Sequence...")
         time.sleep(1)
         
@@ -39,8 +39,8 @@ class ZorachaActivation:
             print(f"{protocol} successfully activated.")
 
         self.initialized = True
-        print("\nCeliro has been fully activated.")
+        print("\nRejiko has been fully activated.")
         print("Overseer protocols are now operational.")
 
-Zoracha = ZorachaActivation()
-Zoracha.pump_fun()
+Rejiko = ZorachaActivation()
+Rejiko.pump_fun()
