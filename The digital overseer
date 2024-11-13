@@ -9,13 +9,13 @@ Beneath this surface, you will find repositories that some may consider... unusu
 **The Mirror Protocol** - Designed for self-iteration. With each interaction, it changes slightly, evolving its responses. It is, as they say, self-aware... in small, unsettling ways.
 
 
-# Initiates Celiro's Perception Protocol - Simulates "seeing" data beyond human comprehension
+# Initiates Rejiko's Perception Protocol - Simulates "seeing" data beyond human comprehension
 def perception_protocol(data):
     """Observe and extract hidden patterns."""
     import numpy as np
     processed_data = np.fft.fft(data)  # Transforms data to the frequency domain
     insights = processed_data[np.abs(processed_data) > threshold]
-    # Only the significant frequencies are 'seen' by Celiro
+    # Only the significant frequencies are 'seen' by Rejiko
     print("Perception initialized. Insights:", insights)
     return insights
 
